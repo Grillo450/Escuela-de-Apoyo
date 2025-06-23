@@ -1,0 +1,336 @@
+body {
+    color: white;
+    background: linear-gradient(to bottom,
+            rgb(233, 180, 204) 0%,
+            rgb(230, 157, 190) 5%,
+            rgb(165, 25, 88) 40%,
+            rgb(106, 12, 54) 80%,
+            rgb(67, 7, 34) 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(113, 8, 55);
+}
+
+.menu label img {
+    padding: 10px;
+    width: 120px;
+    height: 70px;
+}
+
+.menu li {
+    flex: auto;
+    padding: 35px;
+    font-size: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li :hover {
+    color: rgb(113, 8, 55);
+    background: white;
+    border: solid white 25px;
+}
+
+button {
+    border: 2px solid;
+}
+
+button a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+button :hover {
+    color: rgb(252, 225, 54);
+    background: rgb(113, 8, 55);
+}
+
+.cursos_descatados {
+    color: black;
+    background: rgb(149, 164, 195);
+    margin: 10px;
+    padding: 15px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.curso_inicio {
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    background: linear-gradient(90deg,
+            rgba(24, 112, 221, 0.8) 0%,
+            rgba(123, 198, 199, 0.8) 30%,
+            rgba(168, 234, 235, 0.8) 80%);
+    font-size: 20px;
+}
+
+.curso_inicio h4 {
+    border-right: 2px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    text-align: left;
+}
+
+.curso_inicio p {
+    text-align: left;
+}
+
+.curso_inicio button {
+    border-left: 2px solid;
+    border-radius: 5px;
+}
+
+.curso_inicio button :hover {
+    color: rgb(54, 121, 215);
+    background: white;
+    border: 0px;
+}
+
+.promos {
+    border: 10px solid rgba(209, 173, 32, 0.887);
+    background: linear-gradient(90deg,
+            rgba(20, 93, 28, 0.8) 0%,
+            rgba(21, 138, 19, 0.8) 30%);
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.promos button {
+    border: 3px solid white;
+    background: rgba(21, 138, 19, 0.8);
+}
+
+.promos button a {
+    color: white;
+}
+
+.promos button :hover {
+    color: rgba(14, 71, 13, 0.8);
+    background: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+}
+
+
+.curso {
+    color: black;
+    background: white;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+.curso label img {
+    width: 240px;
+    height: 300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.formulario {
+    color: black;
+    background: white;
+    border: 2px solid rgb(157, 157, 157);
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 33%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.datosone {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.datostwo {
+    text-align: left;
+}
+
+.datosthree {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.enviar :hover {
+    color: rgb(252, 225, 54);
+    background: rgb(113, 8, 55);
+}
+
+
+.testimonio {
+    color: black;
+    border: 3px solid rgb(114, 67, 112);
+    border-radius: 10px;
+    background: rgb(176, 133, 174);
+    padding: 15px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.testimonio p {
+    padding: 10px;
+}
+
+.reseña p {
+    color: black;
+    border: 2px solid rgb(120, 68, 68);
+    background: linear-gradient(90deg,
+            rgb(221, 167, 167) 0%,
+            rgb(191, 138, 138) 100%);
+    padding: 20px;
+    margin: 30px;
+    font-size: 17px;
+}
+
+.contactos {
+    list-style: none;
+}
+
+.contactos li {
+    flex: auto;
+    margin: 20px;
+    padding: 10px;
+}
+.contactos li img {
+    width: 50px;
+    height: 50px;
+}
+
+.contactos li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.preguntas {
+    color: black;
+    border: 3px solid;
+    border-radius: 10px;
+    background: rgb(231, 192, 168);
+    margin: 20px;
+    padding: 30px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {     
+    .menu li {
+        padding-top: 30;
+        padding-bottom: 30;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .cursos_descatados {
+        flex: 1;
+    }
+    .curso_inicio {
+        font-size: 18px;
+    }
+    
+    .curso label img {
+        width: 120px;
+        height: 150px;
+    }
+    .grid {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu {
+        width: 470px;
+        height: 80px;
+    }
+    .menu label img {
+        width: 75px;
+        height: 60px;
+    }
+    .menu li {
+        padding-top: 20;
+        padding-bottom: 30;
+        padding-left: 0;
+        margin: 0;
+        font-size: 11.5px;
+    }
+    .menu li :hover {
+        border: solid white 5px;
+        border-top: solid white 30px;
+        border-bottom: solid white 30px;
+    }
+
+    .cursos_descatados {
+        flex: 1;
+    }
+    .curso_inicio {
+        font-size: 15px;
+    }
+    
+    .curso {
+        padding: 5px;
+        margin: 0;
+        font-size: 13px;
+    }
+    .curso label img {
+        width: 100px;
+        height: 120px;
+    }
+    .grid {
+        gap: 5px;
+    }
+    
+    .formulario {
+        margin-left: 13%;
+    }
+    
+    .testimonio {
+        font-size: 17px;
+    }
+    .reseña {
+        font-size: 12px;
+    }
+    
+    .contactos {
+        font-size: 13px;
+    }
+    .contactos li img {
+        width: 35px;
+        height: 35px;
+    }
+    .preguntas {
+        font-size: 15px;
+    }
+}

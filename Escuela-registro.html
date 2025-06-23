@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web de la Escuela/Inicio</title>
+    <link rel="stylesheet" href="Sitio Web de la Escuela.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <label for="">
+                    <img src="escuela de apoyo.png" alt="">
+                </label>
+                <li><a href="Sitio Web de la Escuela.html">Inicio</a></li>
+                <li><a href="Escuela-Cursos.html">Cursos</a></li>
+                <li><a href="Escuela-Testimonios.html">Reseñas</a></li>
+                <li><a href="Escuela-Contactos.html">Contacto</a></li>
+                <li><a href="Escuela-Preguntas.html">Preguntas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section align="center">
+        <div class="formulario">
+            <form action="Escuela-registrado.html" method="post">
+                <h1>Registro de Inscripción</h1>
+                <fieldset>
+                    <h2>Información personales</h2>
+                    <h3>Datos del estudiante</h3>
+                    <div class="datosone">
+                        <input type="text" name="nombre_estudiante" placeholder="Nombre Completo" size="30" maxlength="30" required> <br> <br>
+                        <input type="text" name="dirección_estudiante" placeholder="Dirección" size="30" maxlength="30" required> <br> <br>
+                        <input type="email" name="correo_estudiante" placeholder="Correo Electronico" size="30" maxlength="30" required> <br> <br>
+                        <input type="number" name="teléfono_estudiante" placeholder="Número de Teléfono" size="30" maxlength="30" required> <br> <br>
+                        <input type="number" name="DNI" placeholder="DNI" size="30" maxlength="30" required> <br> <br>
+                        <input type="number" id="edad" name="Edad" placeholder="Edad" size="10" maxlength="30" required>
+                    </div>
+                    <h3>Datos del tutor</h3>
+                    <div class="datosone">
+                        <input type="text" name="nombre_tutor" placeholder="Nombre Completo" size="30" maxlength="30" required> <br> <br>
+                        <input type="text" name="dirección_tutor" placeholder="Dirección" size="30" maxlength="30" required> <br> <br>
+                        <input type="email" name="correo_tutor" placeholder="Correo Electronico" size="30" maxlength="30" required> <br> <br>
+                        <input type="number" name="teléfono" placeholder="Número de Teléfono" size="30" maxlength="30" required> <br> <br>
+                        <input type="number" name="DNI" placeholder="DNI" size="30" maxlength="30" required> <br> <br>
+                        <input type="number" id="edad" name="Edad" placeholder="Edad" size="10" maxlength="30" required>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h2>Información Académica</h2>
+                    <div class="datostwo">
+                        <p>¿En que año va el estudiante?</p>
+                        <select name="Cursos" required>
+                            <option value="">Seleccione un año</option>
+                            <option value="1">1° año</option>
+                            <option value="2">2° año</option>
+                            <option value="3">3° año</option>
+                            <option value="4">4° año</option>
+                            <option value="5">5° año</option>
+                            <option value="6">6° año</option>
+                        </select>
+                        
+                        <section id="repitente">
+                            <p>¿El estudiante se quedó de año?</p>
+                                <label>
+                                    <input type="radio" name="repitente" value="sí">Sí <br>
+                                </label>
+                                <label>
+                                    <input type="radio" name="repitente" value="no">No
+                                </label>
+                        </section>
+
+                        <section id="discapacidad">
+                            <p>¿Tiene alguna discapacidad o educativa especial?</p>
+                                <label>
+                                    <input type="radio" name="discapacidad" value="sí">Sí <br>
+                                </label>
+                                <label>
+                                    <input type="radio" name="discapacidad" value="no">No
+                                </label>
+                        </section>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <h2>Información de Pago</h2>
+                    <p><b>Nota</b>: Los métodos de pago disponibles son tarjetas de créito y débito, transferencia y eefectivo. Asegurate de adjuntar el comprobante si pagás fuera del sistema.</p>
+                    <div class="datosthree">
+                        <input type="number" name="N°tarjeta" placeholder="Número de Tarjeta" size="30" maxlength="30" required> <br> <br>
+                        <input type="date" name="fecha de nacimiento" required> <br> <br>
+                        <input type="text" name="cvv" placeholder="Ingresa el código CVV" required> <br><br>
+                    </div>
+                </fieldset>
+                <br>
+                <div class="enviar">
+                    <input type="submit" href="Escuela-registrado.html" value="Enviar">
+                </div>
+            </form>
+        </div>
+        <script src="Sitio Web de la Escuela.js"></script>
+    </section>
+    <p>&copy; Leandro Samuel Amador. Todos los derechos reservados.</p>
+</body>
+</html>
